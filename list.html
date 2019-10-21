@@ -72,7 +72,7 @@
         */
 
         // Відображення данних з бд
-         $.getJSON("https://api.gastroli.ua/v2/events/filter?locale=uk&public_key=3638eeb29dff9f8bb81f72e805769df0&filter%5Bcity_id%5D=1&limit=12&offset=24", function (data) {
+         $.getJSON("https://api.gastroli.ua/v2/events/filter?locale=uk&public_key=3638eeb29dff9f8bb81f72e805769df0&filter%5Bcity_id%5D=1&limit=24&offset=24", function (data) {
 			console.log(data, data.events.length);
            		i = 0;
                 while(data.events[i]){

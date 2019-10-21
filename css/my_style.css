@@ -45,3 +45,13 @@
 .text-style3{
     font-family: Luminari, fantasy;
 }
+.carousel-caption>h3{
+    font-size: 60px;
+    background-color: black;
+    opacity: 0.8; 
+}
+.carousel-caption>p{
+    font-size: 24px;
+    background-color: black;
+    opacity: 0.8; 
+}
