@@ -5,3 +5,5 @@ Data for site gets from API
 2. Bootstrap
 3. JavaScrit (jQuery)
 4. JSON
+
+git clone https://github.com/MarikKV/Lviv_events.git
