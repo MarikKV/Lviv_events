@@ -82,15 +82,7 @@
         <div style="margin-top: 50px; text-align: center">
             <div class="col-sm-12" >
 
-                <div class="jumbotron fon2">
-                    <h1 class="display-4">Something interesting</h1>
-                    <p class="lead">There may be some interesting information. But not today))</p>
-                    <hr class="my-4">
-                    <p class="sub_href">Below is a link to a site or page with additional information</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
-                </div>
+                <!--blocks in main page js in second while-->
 
                 
             </div>
@@ -113,7 +105,7 @@
                     '<img src="'+data.events[i].promo_favorite_image_url+
                     '" alt="slide'+i+'" width="900px" height="400px">'+
                     '<div class="carousel-caption">'+
-                        '<h3>'+data.events[i].name+'</h3>'+
+                        '<h3>'+data.events[i].name+'</h3><br>'+
                         '<p>'+data.events[i].venue.short_name+'</p>'+
                     '</div>'
                 )
@@ -121,24 +113,24 @@
             }
             //after carousel
                 j = 3;
-                while(data.events[j] && j <=6){
+                while(data.events[j] && j <=8){
                     console.log(data.events[j],'2');
 
                     $('.col-sm-12').append(
-                        '<div class="jumbotron" style="background-image: url('+data.events[j]promo_favorite_image_url+');">'+
-                        '<h1 class="display-4">'+data.events[j].name+'</h1>'+
-                        '<p class="lead">'+data.events[i].venue.short_name+'</p>'+
+                        '<div class="jumbotron fon2">'+
+                        '<h1 class="display-4">'+data.events[j].name+'</h1><br>'+
+                        '<p class="lead">'+data.events[j].venue.short_name+'</p>'+
                         '<hr class="my-4">'+
                         '<p class="sub_href">'+
                             data.events[j].event_start.substring(11, 16)+'<br>'+
                             data.events[j].event_start.substring(0, 10)+
-                        '</p>'+
-                        '<p class="lead">'+
+                        '</p><br>'+
+                        '<div class="lead">'+
                            '<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>'+
-                        '</p>'+
+                        '<//div>'+
                         '</div>'
                     )
-                    i++;
+                    j++;
                 }
         });
         </script>

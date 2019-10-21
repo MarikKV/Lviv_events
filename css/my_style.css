@@ -46,12 +46,32 @@
     font-family: Luminari, fantasy;
 }
 .carousel-caption>h3{
+    display: inline-block;
     font-size: 60px;
     background-color: black;
     opacity: 0.8; 
 }
 .carousel-caption>p{
+    display: inline-block;
     font-size: 24px;
+    background-color: black;
+    opacity: 0.8; 
+}
+.jumbotron{
+    height: 420px;
+}
+.jumbotron>h1{
+    font-weight: 800;
+    display: inline-block;
+    font-size: 65px;
+    color: white;
+    background-color: black;
+    opacity: 0.8; 
+}
+.jumbotron>p{
+    display: inline-block;
+    font-size: 25px;
+    color: white;
     background-color: black;
     opacity: 0.8; 
 }
